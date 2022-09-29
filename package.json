@@ -1,0 +1,14 @@
+{
+  "name": "snakeio",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "comp": "tsc --outFile js/main.js lib/ts/functions.ts lib/ts/classes/event-emitter.class.ts lib/ts/classes/view-manager.class.ts lib/ts/classes/level.class.ts lib/ts/classes/player.class.ts lib/ts/classes/game.class.ts lib/ts/main.ts --watch",
+    "comp2": ""
+  },
+  "author": "Matthias Rabbe & Fokko Vos",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
+}

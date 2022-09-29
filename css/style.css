@@ -1,0 +1,1537 @@
+/* line 9, ../lib/sass/components/_typographie.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fdfdfd;
+  text-shadow: 3px 3px 0px #898999;
+  margin: 0;
+  user-select: none;
+}
+
+/* line 21, ../lib/sass/components/_typographie.scss */
+h1 {
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  font-weight: 800;
+}
+/* line 26, ../lib/sass/components/_typographie.scss */
+h1 > span {
+  display: block;
+  color: #dadada;
+  font-size: 16px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-shadow: none;
+  opacity: 0.8;
+}
+
+/* line 36, ../lib/sass/components/_typographie.scss */
+h2 {
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+  font-weight: 800;
+}
+
+/* line 42, ../lib/sass/components/_typographie.scss */
+h3 {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-weight: 800;
+}
+
+/* line 10, ../lib/sass/components/_buttons.scss */
+.btn {
+  border: none;
+  padding: 12px 20px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 3px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  color: #eeeeee;
+  background-color: #424242;
+  border: 1.2px solid #424242;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* line 27, ../lib/sass/components/_buttons.scss */
+.btn:hover {
+  color: #a8eb12;
+  background-color: #333333;
+}
+/* line 32, ../lib/sass/components/_buttons.scss */
+.btn.btn-light {
+  background: none;
+  color: #eeeeee;
+  border-width: 0;
+  border-radius: 0;
+}
+/* line 38, ../lib/sass/components/_buttons.scss */
+.btn.btn-light:hover {
+  color: #c8c8c8;
+  background-color: rgba(51, 51, 51, 0.623);
+}
+
+/* line 45, ../lib/sass/components/_buttons.scss */
+.btn-icon {
+  padding: 12px 20px;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 52, ../lib/sass/components/_buttons.scss */
+.btn-icon svg {
+  width: 20px;
+}
+
+/* line 10, ../lib/sass/components/_inputs.scss */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+/* line 17, ../lib/sass/components/_inputs.scss */
+form {
+  animation-delay: 0;
+}
+
+/* line 21, ../lib/sass/components/_inputs.scss */
+button {
+  animation-delay: 0.6s;
+}
+
+/* line 25, ../lib/sass/components/_inputs.scss */
+.group {
+  position: relative;
+  margin: 45px 0;
+  margin: 2.8125rem 0;
+}
+
+/* line 31, ../lib/sass/components/_inputs.scss */
+textarea {
+  resize: none;
+}
+
+/* line 35, ../lib/sass/components/_inputs.scss */
+input,
+textarea {
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding: 10px 10px 10px 5px;
+  padding: 0.625rem 0.625rem 0.625rem 0.3125rem;
+  display: block;
+  min-width: 300px;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c6c6c6;
+  color: #eeeeee;
+  user-select: none;
+}
+/* line 52, ../lib/sass/components/_inputs.scss */
+input:focus,
+textarea:focus {
+  outline: none;
+}
+/* line 56, ../lib/sass/components/_inputs.scss */
+input:focus ~ label, input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -14px;
+  top: -0.875rem;
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #a8eb12;
+}
+/* line 65, ../lib/sass/components/_inputs.scss */
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:before {
+  width: 100%;
+}
+
+/* line 70, ../lib/sass/components/_inputs.scss */
+input[type="password"] {
+  letter-spacing: 0.3em;
+}
+
+/* line 74, ../lib/sass/components/_inputs.scss */
+label {
+  color: #c6c6c6;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  left: 0.3125rem;
+  top: 10px;
+  top: 0.625rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
+/* line 89, ../lib/sass/components/_inputs.scss */
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+  user-select: none;
+}
+/* line 95, ../lib/sass/components/_inputs.scss */
+.bar:before {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #a8eb12;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  left: 0%;
+}
+
+/* line 1, ../lib/sass/components/extras/_transitions.scss */
+.transition {
+  animation-fill-mode: both;
+  animation-duration: .5s;
+}
+
+/* line 6, ../lib/sass/components/extras/_transitions.scss */
+.transition-clearfix {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 20, ../lib/sass/components/extras/_transitions.scss */
+.transition-fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* line 34, ../lib/sass/components/extras/_transitions.scss */
+.transition-fadeOut {
+  animation-name: fadeOut;
+}
+
+/* line 39, ../lib/sass/components/extras/_transitions.scss */
+.transition-100ms {
+  animation-duration: 100ms;
+}
+
+/* line 43, ../lib/sass/components/extras/_transitions.scss */
+.transition-delay-100ms {
+  animation-delay: 100ms;
+}
+
+/* line 39, ../lib/sass/components/extras/_transitions.scss */
+.transition-200ms {
+  animation-duration: 200ms;
+}
+
+/* line 43, ../lib/sass/components/extras/_transitions.scss */
+.transition-delay-200ms {
+  animation-delay: 200ms;
+}
+
+/* line 39, ../lib/sass/components/extras/_transitions.scss */
+.transition-300ms {
+  animation-duration: 300ms;
+}
+
+/* line 43, ../lib/sass/components/extras/_transitions.scss */
+.transition-delay-300ms {
+  animation-delay: 300ms;
+}
+
+/* line 39, ../lib/sass/components/extras/_transitions.scss */
+.transition-400ms {
+  animation-duration: 400ms;
+}
+
+/* line 43, ../lib/sass/components/extras/_transitions.scss */
+.transition-delay-400ms {
+  animation-delay: 400ms;
+}
+
+/* line 39, ../lib/sass/components/extras/_transitions.scss */
+.transition-500ms {
+  animation-duration: 500ms;
+}
+
+/* line 43, ../lib/sass/components/extras/_transitions.scss */
+.transition-delay-500ms {
+  animation-delay: 500ms;
+}
+
+/* line 39, ../lib/sass/components/extras/_transitions.scss */
+.transition-600ms {
+  animation-duration: 600ms;
+}
+
+/* line 43, ../lib/sass/components/extras/_transitions.scss */
+.transition-delay-600ms {
+  animation-delay: 600ms;
+}
+
+/* line 39, ../lib/sass/components/extras/_transitions.scss */
+.transition-700ms {
+  animation-duration: 700ms;
+}
+
+/* line 43, ../lib/sass/components/extras/_transitions.scss */
+.transition-delay-700ms {
+  animation-delay: 700ms;
+}
+
+/* line 39, ../lib/sass/components/extras/_transitions.scss */
+.transition-800ms {
+  animation-duration: 800ms;
+}
+
+/* line 43, ../lib/sass/components/extras/_transitions.scss */
+.transition-delay-800ms {
+  animation-delay: 800ms;
+}
+
+/* line 39, ../lib/sass/components/extras/_transitions.scss */
+.transition-900ms {
+  animation-duration: 900ms;
+}
+
+/* line 43, ../lib/sass/components/extras/_transitions.scss */
+.transition-delay-900ms {
+  animation-delay: 900ms;
+}
+
+/* line 15, ../lib/sass/style.scss */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 21, ../lib/sass/style.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 25, ../lib/sass/style.scss */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.2rem;
+  font-size: 0.83rem;
+  min-height: 100vh;
+  background: linear-gradient(to left bottom, #051937, #004d7a, rgba(0, 135, 147, 0.9), rgba(0, 191, 114, 0.7), #a8eb12), url("../img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* line 36, ../lib/sass/style.scss */
+.fill-space {
+  flex: 1 1 auto;
+}
+
+/* line 40, ../lib/sass/style.scss */
+svg {
+  fill: #f2f2f2;
+}
+
+/* line 44, ../lib/sass/style.scss */
+#wrapper {
+  height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+/* line 53, ../lib/sass/style.scss */
+#wrapper > div[class*="view-manager"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100vh;
+  min-width: 100vw;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* line 68, ../lib/sass/style.scss */
+#wrapper > div[class*="view-manager"] > div[class*="header"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 25vh;
+  height: 25vh;
+  width: 100%;
+}
+/* line 77, ../lib/sass/style.scss */
+#wrapper > div[class*="view-manager"] > div[class*="header"] h1 {
+  display: block;
+  font-size: 4.5rem;
+  color: #f2f2f2;
+  width: 100%;
+  text-align: center;
+}
+/* line 85, ../lib/sass/style.scss */
+#wrapper > div[class*="view-manager"] > div[class*="header"] h1 > span {
+  margin-top: 0;
+  opacity: 0.6;
+}
+/* line 92, ../lib/sass/style.scss */
+#wrapper > div[class*="view-manager"] > div[class*="content"] {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 32px;
+  padding-top: 2rem;
+}
+
+/* line 106, ../lib/sass/style.scss */
+.view-manager-menu {
+  z-index: 1000;
+}
+/* line 110, ../lib/sass/style.scss */
+.view-manager-levels {
+  z-index: 900;
+}
+/* line 114, ../lib/sass/style.scss */
+.view-manager-game {
+  z-index: 100;
+}
+
+/* line 5, ../lib/sass/views/_levels.scss */
+.wrapper_levels_header h1 {
+  opacity: 0.9;
+}
+/* line 9, ../lib/sass/views/_levels.scss */
+.wrapper_levels_header h2 {
+  padding-top: 1.3rem;
+  opacity: 0.7;
+}
+/* line 14, ../lib/sass/views/_levels.scss */
+.wrapper_levels_header h3 {
+  opacity: 0.4;
+  padding-top: 2.3rem;
+  text-shadow: none;
+  color: #000000;
+}
+/* line 22, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content {
+  max-height: 75vh;
+}
+/* line 25, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_bar {
+  display: flex;
+  padding: 15px;
+  padding: 0.9375rem;
+  width: 100%;
+  max-width: 85vw;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+/* line 35, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_bar .btn {
+  margin: 0 7px;
+  margin: 0 0.4375rem;
+}
+/* line 39, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_bar .btn:first-child {
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+}
+/* line 44, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_bar .btn:last-child {
+  margin-right: 15px;
+  margin-right: 0.9375rem;
+}
+/* line 51, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  padding: 0.9375rem;
+  max-width: 85vw;
+  overflow-y: scroll;
+  max-height: 80%;
+  padding-top: 0;
+  position: relative;
+}
+/* line 62, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner::-webkit-scrollbar {
+  width: 7px;
+  width: 0.4375rem;
+}
+/* line 67, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner::-webkit-scrollbar-thumb {
+  background-color: rgba(51, 51, 51, 0.6);
+  cursor: pointer;
+}
+/* line 72, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(51, 51, 51, 0.8);
+}
+/* line 76, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/* line 81, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: auto span / 1;
+  width: 90%;
+  height: 15vh;
+  text-align: center;
+  background-color: rgba(242, 242, 242, 0.19);
+  margin: 15px;
+  margin: 0.9375rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* line 94, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl:hover {
+  background-color: rgba(242, 242, 242, 0.34);
+  cursor: pointer;
+}
+/* line 99, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl:nth-child(1), .wrapper_levels_content_inner > div .btn-lvl:nth-child(2), .wrapper_levels_content_inner > div .btn-lvl:nth-child(3) {
+  margin-top: 0;
+}
+/* line 105, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent] {
+  position: relative;
+  overflow: hidden;
+}
+/* line 109, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent]::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 15px;
+  height: 0.9375rem;
+  width: 100%;
+  left: -100%;
+  background-color: rgba(51, 51, 51, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* line 121, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent]::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 15px;
+  height: 0.9375rem;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.1);
+  left: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="0"]::before {
+  left: -100%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="1"]::before {
+  left: -99%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="2"]::before {
+  left: -98%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="3"]::before {
+  left: -97%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="4"]::before {
+  left: -96%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="5"]::before {
+  left: -95%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="6"]::before {
+  left: -94%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="7"]::before {
+  left: -93%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="8"]::before {
+  left: -92%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="9"]::before {
+  left: -91%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="10"]::before {
+  left: -90%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="11"]::before {
+  left: -89%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="12"]::before {
+  left: -88%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="13"]::before {
+  left: -87%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="14"]::before {
+  left: -86%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="15"]::before {
+  left: -85%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="16"]::before {
+  left: -84%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="17"]::before {
+  left: -83%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="18"]::before {
+  left: -82%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="19"]::before {
+  left: -81%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="20"]::before {
+  left: -80%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="21"]::before {
+  left: -79%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="22"]::before {
+  left: -78%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="23"]::before {
+  left: -77%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="24"]::before {
+  left: -76%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="25"]::before {
+  left: -75%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="26"]::before {
+  left: -74%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="27"]::before {
+  left: -73%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="28"]::before {
+  left: -72%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="29"]::before {
+  left: -71%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="30"]::before {
+  left: -70%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="31"]::before {
+  left: -69%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="32"]::before {
+  left: -68%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="33"]::before {
+  left: -67%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="34"]::before {
+  left: -66%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="35"]::before {
+  left: -65%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="36"]::before {
+  left: -64%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="37"]::before {
+  left: -63%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="38"]::before {
+  left: -62%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="39"]::before {
+  left: -61%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="40"]::before {
+  left: -60%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="41"]::before {
+  left: -59%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="42"]::before {
+  left: -58%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="43"]::before {
+  left: -57%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="44"]::before {
+  left: -56%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="45"]::before {
+  left: -55%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="46"]::before {
+  left: -54%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="47"]::before {
+  left: -53%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="48"]::before {
+  left: -52%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="49"]::before {
+  left: -51%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="50"]::before {
+  left: -50%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="51"]::before {
+  left: -49%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="52"]::before {
+  left: -48%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="53"]::before {
+  left: -47%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="54"]::before {
+  left: -46%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="55"]::before {
+  left: -45%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="56"]::before {
+  left: -44%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="57"]::before {
+  left: -43%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="58"]::before {
+  left: -42%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="59"]::before {
+  left: -41%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="60"]::before {
+  left: -40%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="61"]::before {
+  left: -39%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="62"]::before {
+  left: -38%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="63"]::before {
+  left: -37%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="64"]::before {
+  left: -36%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="65"]::before {
+  left: -35%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="66"]::before {
+  left: -34%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="67"]::before {
+  left: -33%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="68"]::before {
+  left: -32%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="69"]::before {
+  left: -31%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="70"]::before {
+  left: -30%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="71"]::before {
+  left: -29%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="72"]::before {
+  left: -28%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="73"]::before {
+  left: -27%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="74"]::before {
+  left: -26%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="75"]::before {
+  left: -25%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="76"]::before {
+  left: -24%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="77"]::before {
+  left: -23%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="78"]::before {
+  left: -22%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="79"]::before {
+  left: -21%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="80"]::before {
+  left: -20%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="81"]::before {
+  left: -19%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="82"]::before {
+  left: -18%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="83"]::before {
+  left: -17%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="84"]::before {
+  left: -16%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="85"]::before {
+  left: -15%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="86"]::before {
+  left: -14%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="87"]::before {
+  left: -13%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="88"]::before {
+  left: -12%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="89"]::before {
+  left: -11%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="90"]::before {
+  left: -10%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="91"]::before {
+  left: -9%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="92"]::before {
+  left: -8%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="93"]::before {
+  left: -7%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="94"]::before {
+  left: -6%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="95"]::before {
+  left: -5%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="96"]::before {
+  left: -4%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="97"]::before {
+  left: -3%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="98"]::before {
+  left: -2%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="99"]::before {
+  left: -1%;
+}
+/* line 136, ../lib/sass/views/_levels.scss */
+.wrapper_levels_content_inner > div .btn-lvl[data-percent="100"]::before {
+  left: 0%;
+}
+
+/* line 149, ../lib/sass/views/_levels.scss */
+#levels {
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  flex: 1 1 auto;
+}
+/* line 154, ../lib/sass/views/_levels.scss */
+#levels.loaded {
+  opacity: 1;
+}
+
+/* line 3, ../lib/sass/views/_game.scss */
+.wrapper_game {
+  position: relative;
+  user-select: none;
+}
+/* line 7, ../lib/sass/views/_game.scss */
+.wrapper_game_canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  height: calc(100vh - 75px);
+}
+/* line 15, ../lib/sass/views/_game.scss */
+.wrapper_game_canvas .menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+  padding: 1.25rem;
+  opacity: 0;
+  transition: opacity 0s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* line 28, ../lib/sass/views/_game.scss */
+.wrapper_game_canvas .menu_game {
+  flex: 1 1 auto;
+  height: 100%;
+  padding: 30px 12px;
+  padding: 1.875rem 0.75rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 60vw;
+}
+/* line 39, ../lib/sass/views/_game.scss */
+.wrapper_game_canvas .menu_options {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+}
+/* line 46, ../lib/sass/views/_game.scss */
+.wrapper_game_canvas .menu_options > .btn {
+  transition: all 0.3s, opacity 0s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* line 49, ../lib/sass/views/_game.scss */
+.wrapper_game_canvas .menu_options > .btn:hover {
+  background-color: rgba(242, 242, 242, 0.19);
+}
+/* line 56, ../lib/sass/views/_game.scss */
+.wrapper_game_canvas canvas {
+  transform: rotate3d(0, 1, 0, 0);
+  transition: all 0.3s, opacity 0.13s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* line 61, ../lib/sass/views/_game.scss */
+.wrapper_game_canvas.pause, .wrapper_game_canvas.finish {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* line 65, ../lib/sass/views/_game.scss */
+.wrapper_game_canvas.pause .menu, .wrapper_game_canvas.finish .menu {
+  opacity: 1;
+}
+/* line 69, ../lib/sass/views/_game.scss */
+.wrapper_game_canvas.pause canvas, .wrapper_game_canvas.finish canvas {
+  transform: scale(0.7) translateX(-30%);
+  opacity: 0;
+}
+/* line 76, ../lib/sass/views/_game.scss */
+.wrapper_game_canvas.pause .finish-btn {
+  height: 0;
+  opacity: 0;
+  padding: 0;
+}
+/* line 84, ../lib/sass/views/_game.scss */
+.wrapper_game_canvas.finish .pause-btn {
+  height: 0;
+  opacity: 0;
+  padding: 0;
+}
+/* line 91, ../lib/sass/views/_game.scss */
+.wrapper_game_canvas.finish.full-finish .finish-btn-100 {
+  height: 0;
+  opacity: 0;
+  padding: 0;
+}
+/* line 100, ../lib/sass/views/_game.scss */
+.wrapper_game_bar {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+  padding: 0 0.9375rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1001;
+}
+/* line 112, ../lib/sass/views/_game.scss */
+.wrapper_game_bar::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  top: 0;
+  background-color: rgba(0, 135, 147, 0.9);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="0"]::before {
+  left: -100%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="1"]::before {
+  left: -99%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="2"]::before {
+  left: -98%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="3"]::before {
+  left: -97%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="4"]::before {
+  left: -96%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="5"]::before {
+  left: -95%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="6"]::before {
+  left: -94%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="7"]::before {
+  left: -93%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="8"]::before {
+  left: -92%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="9"]::before {
+  left: -91%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="10"]::before {
+  left: -90%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="11"]::before {
+  left: -89%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="12"]::before {
+  left: -88%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="13"]::before {
+  left: -87%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="14"]::before {
+  left: -86%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="15"]::before {
+  left: -85%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="16"]::before {
+  left: -84%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="17"]::before {
+  left: -83%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="18"]::before {
+  left: -82%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="19"]::before {
+  left: -81%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="20"]::before {
+  left: -80%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="21"]::before {
+  left: -79%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="22"]::before {
+  left: -78%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="23"]::before {
+  left: -77%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="24"]::before {
+  left: -76%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="25"]::before {
+  left: -75%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="26"]::before {
+  left: -74%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="27"]::before {
+  left: -73%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="28"]::before {
+  left: -72%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="29"]::before {
+  left: -71%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="30"]::before {
+  left: -70%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="31"]::before {
+  left: -69%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="32"]::before {
+  left: -68%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="33"]::before {
+  left: -67%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="34"]::before {
+  left: -66%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="35"]::before {
+  left: -65%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="36"]::before {
+  left: -64%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="37"]::before {
+  left: -63%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="38"]::before {
+  left: -62%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="39"]::before {
+  left: -61%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="40"]::before {
+  left: -60%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="41"]::before {
+  left: -59%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="42"]::before {
+  left: -58%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="43"]::before {
+  left: -57%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="44"]::before {
+  left: -56%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="45"]::before {
+  left: -55%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="46"]::before {
+  left: -54%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="47"]::before {
+  left: -53%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="48"]::before {
+  left: -52%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="49"]::before {
+  left: -51%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="50"]::before {
+  left: -50%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="51"]::before {
+  left: -49%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="52"]::before {
+  left: -48%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="53"]::before {
+  left: -47%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="54"]::before {
+  left: -46%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="55"]::before {
+  left: -45%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="56"]::before {
+  left: -44%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="57"]::before {
+  left: -43%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="58"]::before {
+  left: -42%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="59"]::before {
+  left: -41%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="60"]::before {
+  left: -40%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="61"]::before {
+  left: -39%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="62"]::before {
+  left: -38%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="63"]::before {
+  left: -37%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="64"]::before {
+  left: -36%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="65"]::before {
+  left: -35%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="66"]::before {
+  left: -34%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="67"]::before {
+  left: -33%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="68"]::before {
+  left: -32%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="69"]::before {
+  left: -31%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="70"]::before {
+  left: -30%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="71"]::before {
+  left: -29%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="72"]::before {
+  left: -28%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="73"]::before {
+  left: -27%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="74"]::before {
+  left: -26%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="75"]::before {
+  left: -25%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="76"]::before {
+  left: -24%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="77"]::before {
+  left: -23%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="78"]::before {
+  left: -22%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="79"]::before {
+  left: -21%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="80"]::before {
+  left: -20%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="81"]::before {
+  left: -19%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="82"]::before {
+  left: -18%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="83"]::before {
+  left: -17%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="84"]::before {
+  left: -16%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="85"]::before {
+  left: -15%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="86"]::before {
+  left: -14%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="87"]::before {
+  left: -13%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="88"]::before {
+  left: -12%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="89"]::before {
+  left: -11%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="90"]::before {
+  left: -10%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="91"]::before {
+  left: -9%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="92"]::before {
+  left: -8%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="93"]::before {
+  left: -7%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="94"]::before {
+  left: -6%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="95"]::before {
+  left: -5%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="96"]::before {
+  left: -4%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="97"]::before {
+  left: -3%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="98"]::before {
+  left: -2%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="99"]::before {
+  left: -1%;
+}
+/* line 125, ../lib/sass/views/_game.scss */
+.wrapper_game_bar[data-percent="100"]::before {
+  left: 0%;
+}
+/* line 132, ../lib/sass/views/_game.scss */
+.wrapper_game_bar h1 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  font-size: 38px;
+  font-size: 2.375rem;
+  padding: 0 30px;
+  padding: 0 1.875rem;
+  background-color: rgba(255, 255, 255, 0.432);
+}
+/* line 143, ../lib/sass/views/_game.scss */
+.wrapper_game_bar h1 span#sadv-score {
+  font-size: 38px;
+  font-size: 2.375rem;
+  text-shadow: none;
+  color: rgba(0, 0, 0, 0.67);
+}
+/* line 150, ../lib/sass/views/_game.scss */
+.wrapper_game_bar h1 .footmark {
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.49);
+  padding-top: 4px;
+}
+/* line 156, ../lib/sass/views/_game.scss */
+.wrapper_game_bar h1 .footmark .max-blocks {
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+/* line 163, ../lib/sass/views/_game.scss */
+.wrapper_game_bar h1 * {
+  margin: 0;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnakeAdventure</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <div class="wrapper_levels view-manager view-manager-levels" data-view="levels">
+            <div class="wrapper_levels_header">
+                <h1>SnakeAdventure</h1>
+                <h2>Levels</h2>
+                <h3>Von Fokko V. & M. R.</h3>
+            </div>
+            <div class="wrapper_levels_content">
+                <div class="wrapper_levels_content_bar">
+                    <div class="btn btn-light btn-icon btn-sound">
+                        <svg aria-hidden="true" data-state="mute" focusable="false" data-icon="volume-mute"
+                            class="svg-inline--fa fa-volume-mute fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M454.63 256l55.03-55.03c3.12-3.12 3.12-8.19 0-11.31l-11.31-11.31c-3.12-3.12-8.19-3.12-11.31 0L432 233.37l-55.03-55.03c-3.12-3.12-8.19-3.12-11.31 0l-11.31 11.31c-3.12 3.12-3.12 8.19 0 11.31L409.37 256l-55.03 55.03c-3.12 3.12-3.12 8.19 0 11.31l11.31 11.31c3.12 3.12 8.19 3.12 11.31 0L432 278.63l55.03 55.03c3.12 3.12 8.19 3.12 11.31 0l11.31-11.31c3.12-3.12 3.12-8.19 0-11.31L454.63 256zM231.81 64c-5.91 0-11.92 2.18-16.78 7.05L126.06 160H24c-13.26 0-24 10.74-24 24v144c0 13.25 10.74 24 24 24h102.06l88.97 88.95c4.87 4.87 10.88 7.05 16.78 7.05 12.33 0 24.19-9.52 24.19-24.02V88.02C256 73.51 244.13 64 231.81 64zM224 404.67l-75.32-75.3-9.37-9.37H32V192h107.31l9.37-9.37 75.32-75.3v297.34z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="fill-space"></div>
+                    <div class="btn btn-light btn-icon btn-export">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="cloud-download"
+                            class="svg-inline--fa fa-cloud-download fa-w-20" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path fill="currentColor"
+                                d="M571.7 238.8c2.8-9.9 4.3-20.2 4.3-30.8 0-61.9-50.1-112-112-112-16.7 0-32.9 3.6-48 10.8-31.6-45-84.3-74.8-144-74.8-94.4 0-171.7 74.5-175.8 168.2C39.2 220.2 0 274.3 0 336c0 79.6 64.4 144 144 144h368c70.7 0 128-57.2 128-128 0-47-25.8-90.8-68.3-113.2zM512 448H144c-61.9 0-112-50.1-112-112 0-56.8 42.2-103.7 97-111-.7-5.6-1-11.3-1-17 0-79.5 64.5-144 144-144 60.3 0 111.9 37 133.4 89.6C420 137.9 440.8 128 464 128c44.2 0 80 35.8 80 80 0 18.5-6.3 35.6-16.9 49.2C573 264.4 608 304.1 608 352c0 53-43 96-96 96zM405.2 254.5c-4.7-4.7-12.3-4.7-17 0L320 322.7V172c0-6.6-5.4-12-12-12h-8c-6.6 0-12 5.4-12 12v150.7l-68.2-68.2c-4.7-4.7-12.3-4.7-17 0l-5.7 5.7c-4.7 4.7-4.7 12.3 0 17l98.3 98.3c4.7 4.7 12.3 4.7 17 0l98.3-98.3c4.7-4.7 4.7-12.3 0-17l-5.5-5.7z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="btn btn-light btn-icon btn-import">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="cloud-upload"
+                            class="svg-inline--fa fa-cloud-upload fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 512">
+                            <path fill="currentColor"
+                                d="M312.5 168.5c-4.7-4.7-12.3-4.7-17 0l-98.3 98.3c-4.7 4.7-4.7 12.3 0 17l5.7 5.7c4.7 4.7 12.3 4.7 17 0l68.2-68.2V372c0 6.6 5.4 12 12 12h8c6.6 0 12-5.4 12-12V221.3l68.2 68.2c4.7 4.7 12.3 4.7 17 0l5.7-5.7c4.7-4.7 4.7-12.3 0-17l-98.5-98.3zm259.2 70.3c2.8-9.9 4.3-20.2 4.3-30.8 0-61.9-50.1-112-112-112-16.7 0-32.9 3.6-48 10.8-31.6-45-84.3-74.8-144-74.8-94.4 0-171.7 74.5-175.8 168.2C39.2 220.2 0 274.3 0 336c0 79.6 64.4 144 144 144h368c70.7 0 128-57.2 128-128 0-47-25.8-90.8-68.3-113.2zM512 448H144c-61.9 0-112-50.1-112-112 0-56.8 42.2-103.7 97-111-.7-5.6-1-11.3-1-17 0-79.5 64.5-144 144-144 60.3 0 111.9 37 133.4 89.6C420 137.9 440.8 128 464 128c44.2 0 80 35.8 80 80 0 18.5-6.3 35.6-16.9 49.2C573 264.4 608 304.1 608 352c0 53-43 96-96 96z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="wrapper_levels_content_inner" id="levels">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper_game view-manager view-manager-game" data-view="game">
+            <div class="wrapper_game_canvas" id="sadv-canvas-wrapper">
+                <div class="menu">
+                    <div class="menu_game" id="sadv-pause-img"></div>
+                    <div class="menu_options">
+                        <div class="btn btn-light btn-resume pause-btn" id="sadv-btn-resume">Weiterspielen</div>
+                        <div class="btn btn-light btn-retry finish-btn finish-btn-100" id="sadv-btn-retry">Erneut
+                            versuchen</div>
+                        <div class="btn btn-light btn-next-level finish-btn" id="sadv-btn-next-level">
+                            Nächstes Level
+                        </div>
+                        <div class="btn btn-light btn-levels" id="sadv-btn-levels">Levels</div>
+                    </div>
+                </div>
+                <canvas class="wrapper_game_canvas" id="sadv-canvas"></canvas>
+            </div>
+            <div class="wrapper_game_bar" id="sadv-proggress">
+                <h1 class="score"><span id="sadv-score"></span><span class="footmark">/<span class="max-blocks"
+                            id="sadv-max-blocks"></span></span></h1>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

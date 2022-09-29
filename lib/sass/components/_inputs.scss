@@ -1,0 +1,105 @@
+@import '../mixins';
+
+$bg: #424242;
+$bg-hover: #333333;
+$color: #eeeeee;
+$color-hover: #a8eb12;
+$muted-color: mix(white, $bg, 70%);
+$trans-time: 300ms;
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+form {
+    animation-delay: 0;
+}
+
+button {
+    animation-delay: 0.6s;
+}
+
+.group {
+    position: relative;
+    margin: 45px 0;
+    margin: calcRem(45px) 0;
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+textarea {
+    background: none;
+    color: $muted-color;
+    font-size: 18px;
+    font-size: calcRem(18px);
+    padding: 10px 10px 10px 5px;
+    padding: calcRem(10px) calcRem(10px) calcRem(10px) calcRem(5px);
+    display: block;
+    min-width: 300px;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $muted-color;
+    color: $color;
+    user-select: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:focus~label,
+    &:valid~label {
+        top: -14px;
+        top: calcRem(-14px);
+        font-size: 12px;
+        font-size: calcRem(12px);
+        color: $color-hover;
+    }
+
+    &:focus~.bar:before {
+        width: 100%;
+    }
+}
+
+input[type="password"] {
+    letter-spacing: 0.3em;
+}
+
+label {
+    color: $muted-color;
+    font-size: 16px;
+    font-size: calcRem(16px);
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    left: calcRem(5px);
+    top: 10px;
+    top: calcRem(10px);
+    @include transition(all .3s);
+    user-select: none;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+    user-select: none;
+
+    &:before {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 0px;
+        position: absolute;
+        background: $color-hover;
+        @include transition(all .3s);
+        left: 0%;
+    }
+}

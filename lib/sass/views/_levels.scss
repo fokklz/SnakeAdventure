@@ -1,0 +1,157 @@
+@import '../mixins';
+
+.wrapper_levels {
+    &_header {
+        h1 {
+            opacity: 0.9;
+        }
+
+        h2 {
+            padding-top: 1.3rem;
+            opacity: 0.7;
+        }
+
+        h3 {
+            opacity: 0.4;
+            padding-top: 2.3rem;
+            text-shadow: none;
+            color: #000000;
+        }
+    }
+
+    &_content {
+        max-height: 75vh;
+
+        &_bar {
+            display: flex;
+            padding: 15px;
+            padding: calcRem(15px);
+            width: 100%;
+            max-width: 85vw;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: row;
+
+            .btn {
+                margin: 0 7px;
+                margin: 0 calcRem(7px);
+
+                &:first-child {
+                    margin-left: 15px;
+                    margin-left: calcRem(15px);
+                }
+
+                &:last-child {
+                    margin-right: 15px;
+                    margin-right: calcRem(15px);
+                }
+            }
+        }
+
+        &_inner {
+            width: 100%;
+            margin: 0 auto;
+            padding: 15px;
+            padding: calcRem(15px);
+            max-width: 85vw;
+            overflow-y: scroll;
+            max-height: 80%;
+            padding-top: 0;
+            position: relative;
+
+            &::-webkit-scrollbar {
+                width: 7px;
+                width: calcRem(7px);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: rgba(51, 51, 51, 0.6);
+                cursor: pointer;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background-color: rgba(51, 51, 51, 0.8);
+            }
+
+            >div {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+
+                .btn-lvl {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    grid-column: auto span / 1;
+                    width: 90%;
+                    height: 15vh;
+                    text-align: center;
+                    background-color: rgba(242, 242, 242, 0.19);
+                    margin: 15px;
+                    margin: calcRem(15px);
+                    @include transition(all .3s);
+
+                    &:hover {
+                        background-color: rgba(242, 242, 242, 0.34);
+                        cursor: pointer;
+                    }
+
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        margin-top: 0;
+                    }
+
+                    &[data-percent] {
+                        position: relative;
+                        overflow: hidden;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            height: 15px;
+                            height: calcRem(15px);
+                            width: 100%;
+                            left: -100%;
+                            background-color: rgba(51, 51, 51, 0.4);
+                            @include transition(all .3s);
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            height: 15px;
+                            height: calcRem(15px);
+                            width: 100%;
+                            background-color: rgba(51, 51, 51, 0.1);
+                            left: 0;
+                            @include transition(all .3s);
+                        }
+                    }
+
+                    @for $i from 0 through 100 {
+                        &[data-percent="#{$i}"] {
+                            &::before {
+                                left: #{-100% + $i};
+                            }
+                        }
+                    }
+
+                    &[data-percent="100"] {}
+                }
+            }
+        }
+    }
+}
+
+#levels {
+    opacity: 0;
+    @include transition(all .3s);
+    flex: 1 1 auto;
+
+    &.loaded {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,120 @@
+@import 'mixins';
+
+@import 'components/typographie';
+@import 'components/buttons';
+@import 'components/inputs';
+
+@import 'components/extras/transitions';
+
+$gardient-background-color-1: rgba(5, 25, 55, 1);
+$gardient-background-color-2: rgba(0, 77, 122, 1);
+$gardient-background-color-3: rgba(0, 135, 147, 0.9);
+$gardient-background-color-4: rgba(0, 191, 114, 0.7);
+$gardient-background-color-5: rgba(168, 235, 18, 1);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.2rem;
+    font-size: 0.83rem;
+    min-height: 100vh;
+    background: linear-gradient(to left bottom, $gardient-background-color-1, $gardient-background-color-2, $gardient-background-color-3, $gardient-background-color-4, $gardient-background-color-5), url('../img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    @include transition(background .3s);
+}
+
+.fill-space {
+    flex: 1 1 auto;
+}
+
+svg {
+    fill: #f2f2f2;
+}
+
+#wrapper {
+    height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+
+    >div[class*="view-manager"] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        height: 100vh;
+        min-width: 100vw;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        >div[class*="header"] {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            min-height: 25vh;
+            height: 25vh;
+            width: 100%;
+
+            h1 {
+                display: block;
+                font-size: 4.5rem;
+                color: #f2f2f2;
+                //text-shadow: 2px 2px 0px rgba(168, 235, 18, 1);
+                width: 100%;
+                text-align: center;
+
+                >span {
+                    margin-top: 0;
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        >div[class*="content"] {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-top: 32px;
+            padding-top: calcRem(32px);
+        }
+    }
+}
+
+.view-manager {
+    &-menu {
+        z-index: 1000;
+    }
+
+    &-levels {
+        z-index: 900;
+    }
+
+    &-game {
+        z-index: 100;
+    }
+}
+
+@import 'views/levels';
+@import 'views/game';

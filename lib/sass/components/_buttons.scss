@@ -1,0 +1,55 @@
+@import '../mixins';
+
+$bg: #424242;
+$bg-hover: #333333;
+$color: #eeeeee;
+$color-hover: #a8eb12;
+$muted-color: mix(white, $bg, 70%);
+$trans-time: 300ms;
+
+.btn {
+    border: none;
+    padding: 12px 20px;
+    padding: calcRem(12px) calcRem(20px);
+    border-radius: 3px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    color: $color;
+    background-color: $bg;
+    border: 1.2px solid $bg;
+    @include transition(all .3s);
+
+
+    &:hover {
+        color: $color-hover;
+        background-color: $bg-hover;
+    }
+
+    &.btn-light {
+        background: none;
+        color: $color;
+        border-width: 0;
+        border-radius: 0;
+
+        &:hover {
+            color: darken($color: $color, $amount: 15);
+            background-color: rgba($color: #333333, $alpha: 0.623);
+        }
+    }
+}
+
+.btn-icon {
+    padding: 12px 20px;
+    padding: calcRem(12px) calcRem(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        width: 20px;
+    }
+}
